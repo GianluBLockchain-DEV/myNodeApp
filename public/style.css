@@ -366,6 +366,35 @@ footer .column > a:hover{
         grid-template-columns: 1fr 200px;
     }
 }
+/* ... existing styles ... */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+/* ... rest of your styles ... */
+
+
+/* responsive section */
 
 @media (width < 600px){
     header .image::before{
